@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GitHub Pages</title>
+</head>
+<body>
+  <script>
+    // Пример запроса методом Fetch и обработка полученного JSON
+    fetch('data.json')
+      .then(response => response.json())
+      .then(data => {
+        // Обработка полученного JSON
+        console.log(data);
+      })
+      .catch(error => {
+        // Обработка ошибок
+        console.error('Ошибка:', error);
+      });
+  </script>
+</body>
+</html>
